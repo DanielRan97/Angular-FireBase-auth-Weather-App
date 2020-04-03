@@ -1,0 +1,30 @@
+
+<div id="main">
+    <nav>
+    
+        <img id="sunImg" src="../../assets/sun1.png">
+         <button class="button" id="BcityList" (click)="b1()" ><a [routerLink]="['/cityList']" >  City list  </a></button>|
+         <button class="button" id="BbyCity" (click)="b2()"> <a [routerLink]="['/byCity']" > By city  </a> </button>
+         <button (click)="logout()" id="BlogOut" style="position: absolute;left: 260px;top: 30px;">Log out</button>
+   </nav>
+    <h1 style="text-align: center;margin-top: 40px;">Weather API angular</h1>
+  
+  </div>
+  <div id="h1"><h1>Wheather api</h1></div>
+  <div id="byCity">
+    <input type="search" #search placeholder="Choose the city here..."><button (click)="searchCity(search.value)" >search</button>
+    <p *ngIf="error" style="color: red;">!בחר עיר</p>
+    <div *ngFor="let city of cityDetails" id="card">
+        
+     
+      <button *ngIf="!Bshow" id="addB" [disabled]="alredyText !== 'add'"  (click)="saveCity()">{{alredyText}}</button>
+       <p></p>
+       <h1 id="p1" >{{city.name}}</h1>
+        <h2 id="p2" >{{city.country}}</h2>
+       <div id="c"><img src="https://openweathermap.org/img/wn/{{city.icon}}@2x.png" id="p4" style="display: inline-block;">
+        <h3 id="p3" style="display: inline-block;" >{{city.temp}} c</h3>
+    </div>
+    </div>
+    </div>
+    
+     

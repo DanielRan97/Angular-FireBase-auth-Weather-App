@@ -1,0 +1,106 @@
+nav{
+    height: 85px;
+    width: 100%;
+    background-color: orange;
+    direction: rtl;
+    position: absolute;
+    top: 0px;
+    vertical-align: middle;
+    line-height: 84px; 
+    font-size: 20px;
+}
+button{
+    display: inline-block;
+    background: none;
+    border: none;
+    font-size: 20px;
+}
+button:hover{
+    background-color: wheat;
+}
+#sunImg{
+    height: 85px;
+    width: 207px;
+    position: absolute;
+    left: 0px;
+    background-color: #ffffff00;
+}
+#h1{
+    margin-top: 150px;
+    text-align: center;
+}
+#card{
+    min-height: 212px;
+    width: 305px;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: lightsalmon;
+    color: black;
+    border: 1px solid black;
+}
+#c{
+    margin-right: 100px;
+}
+#Carea{
+    text-align: center;
+}
+#deleteB{
+    margin-left: 277px;
+    color: red;
+    border: 1px solid gray;
+    
+}
+
+#deleteB:hover{
+    background-color: red;
+    border:  1px solid red;
+    color: white;
+}
+
+#BlogOut{
+background-color: red;
+}
+#BlogOut:hover{
+    color: white;
+}
+#homeTown{
+    margin-top: -125px;
+    margin-left: 0px;
+    text-align: center;
+    background-color: tomato;
+    border: 1px solid black;
+    padding: 5px;
+    height: 275px;
+
+}
+#homeTown p {
+    font-size: 20px;
+}
+
+#icon{
+    margin-top: -30px;
+}
+#deleteB2{
+    margin-left: 277px;
+    color: red;
+    border: 1px solid gray;
+    
+}
+
+#deleteB2:hover{
+    background-color: red;
+    border:  1px solid red;
+    color: white;
+}
+
+#p4{
+    position: absolute;
+    bottom: -2px;
+    left: 18px;
+}
+#p3{
+    left: 129px;
+    bottom: 13px;
+}

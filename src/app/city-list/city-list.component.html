@@ -1,0 +1,35 @@
+<div id="main">
+    <nav>
+    
+        <img id="sunImg" src="../../assets/sun1.png">
+         <button id="BcityList" (click)="b1()" ><a [routerLink]="['/cityList']" >  City list  </a></button>
+         |<button id="BbyCity" (click)="b2()"> <a [routerLink]="['/byCity']" > By city  </a> </button>
+         <button (click)="logout()" id="BlogOut" style="position: absolute;left: 260px;top: 30px;">Log out</button>
+        </nav>
+  </div>
+  <div id="h1"><h1>Wheather api</h1></div>
+<div id="homeTown" *ngFor="let city of HomeTown" style="display: inline-block;">
+    <div style="position: relative;"><button id="deleteB2" (click)="deleteUser1()">X</button></div>
+    <h1>Your Home Town</h1>
+<p>city : {{city.name}}</p>
+<p>country : {{city.country}}</p>
+<p>temp : {{city.temp}}</p>
+<img id="icon" src="https://openweathermap.org/img/wn/{{city.icon}}@2x.png">
+
+</div>
+
+ 
+  <h3 style="color:lightgray;margin-top: 10px;text-align:center;font-size: 40px;" *ngIf="!favCity[0]">Choose cities in "by city" page...</h3>
+
+<div id="Carea" >
+<div *ngFor="let city of favCity" style="display: inline-block; margin: 5px;" >
+    <div id="card" style="position: relative;">
+        <div style="position: relative;"><button id="deleteB" (click)="deleteUser(city.id)">X</button></div>
+    <h1 id="p1" >{{city.name}}</h1>
+    <h2 id="p2" >{{city.country}}</h2>
+    <h3 id="p3" >{{city.temp}} c</h3>
+    <div id="p4"><img src="https://openweathermap.org/img/wn/{{city.icon}}@2x.png" id="p4" style="display: inline-block;">
+   
+</div>
+</div>
+</div>
